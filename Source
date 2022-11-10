@@ -9,7 +9,7 @@ repeat wait() until game:IsLoaded()
 
 getgenv().Fix = false
 
-getgenv().TeclasWS = {
+getgenv().soulssWS = {
     ["souls1"] = "M", -- speed +5
     ["souls2"] = "N", -- speed -5
     ["souls3"] = "V" -- toggle  
@@ -49,17 +49,17 @@ getgenv().TECHWAREWALKSPEED_LOADED = true
 wait(1.5)
 
 
-anunciar_atentado_terrorista("Welcome"..TeclasWS.tecla3.."")
+anunciar_atentado_terrorista("Welcome"..soulssWS.souls3.."")
 
 -- // Star Of David 
 esvastica.KeyDown:Connect(function(el_impostor)
-    if el_impostor:lower() == soulWS.souls1:lower() then
+    if el_impostor:lower() == soulssWS.souls1:lower() then
         velocidad_de_cum = velocidad_de_cum + 5
         anunciar_atentado_terrorista(" (speed =   "..tostring(velocidad_de_cum)..")")
-    elseif el_impostor:lower() == soulsWS.souls2:lower() then
+    elseif el_impostor:lower() == soulssWS.souls2:lower() then
         velocidad_de_cum = velocidad_de_cum - 5
         anunciar_atentado_terrorista(" (speed =  "..tostring(velocidad_de_cum)..")")
-    elseif el_impostor:lower() == soulsWS.souls3:lower() then
+    elseif el_impostor:lower() == soulssWS.souls3:lower() then
         if es_pedofilo then
             es_pedofilo = false
             anunciar_atentado_terrorista("speed off")
