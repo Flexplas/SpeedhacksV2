@@ -53,13 +53,13 @@ anunciar_atentado_terrorista("Welcome"..TeclasWS.tecla3.."")
 
 -- // Star Of David 
 esvastica.KeyDown:Connect(function(el_impostor)
-    if el_impostor:lower() == TeclasWS.tecla1:lower() then
+    if el_impostor:lower() == soulWS.souls1:lower() then
         velocidad_de_cum = velocidad_de_cum + 5
         anunciar_atentado_terrorista(" (speed =   "..tostring(velocidad_de_cum)..")")
-    elseif el_impostor:lower() == TeclasWS.tecla2:lower() then
+    elseif el_impostor:lower() == soulsWS.souls2:lower() then
         velocidad_de_cum = velocidad_de_cum - 5
         anunciar_atentado_terrorista(" (speed =  "..tostring(velocidad_de_cum)..")")
-    elseif el_impostor:lower() == TeclasWS.tecla3:lower() then
+    elseif el_impostor:lower() == soulsWS.souls3:lower() then
         if es_pedofilo then
             es_pedofilo = false
             anunciar_atentado_terrorista("speed off")
