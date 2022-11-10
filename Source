@@ -10,9 +10,9 @@ repeat wait() until game:IsLoaded()
 getgenv().Fix = false
 
 getgenv().TeclasWS = {
-    ["tecla1"] = "M", -- speed +5
-    ["tecla2"] = "N", -- speed -5
-    ["tecla3"] = "V" -- toggle  
+    ["souls1"] = "M", -- speed +5
+    ["souls2"] = "N", -- speed -5
+    ["souls3"] = "V" -- toggle  
 }
 
 
